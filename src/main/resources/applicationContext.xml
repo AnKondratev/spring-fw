@@ -5,7 +5,12 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="musicBean"
-          class="ru.kondratev.stud.RockMusic">
+          class="ru.kondratev.stud.ClassicalMusic">
+    </bean>
+
+    <bean id="musicPlayer"
+        class="ru.kondratev.stud.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
     </bean>
 
 </beans>
