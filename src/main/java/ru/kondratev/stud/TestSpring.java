@@ -10,7 +10,7 @@ public class TestSpring {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
-        ClassicalMusic classicalMusic = context.getBean("classicMusicBean", ClassicalMusic.class);
+        ClassicalMusic classicalMusic = context.getBean("classicMusic", ClassicalMusic.class);
         System.out.println(classicalMusic.getSong());
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
@@ -20,9 +20,9 @@ public class TestSpring {
         System.out.println(musicPlayer.getValue());
         System.out.println(musicPlayer2.getValue());
         List<Music> playListMus = List.of(
-                context.getBean("classicMusicBean", ClassicalMusic.class),
-                context.getBean("rapMusicBean", RapMusic.class),
-                context.getBean("rockMusicBean", RockMusic.class)
+                context.getBean("classicMusic", ClassicalMusic.class),
+                context.getBean("rapMusic", RapMusic.class),
+                context.getBean("rockMusic", RockMusic.class)
         );
         musicPlayer.playMusic();
         System.out.println();
