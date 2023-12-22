@@ -14,8 +14,9 @@
     <bean id="rockMusicBean" class="ru.kondratev.stud.RockMusic"/>
     <bean id="rapMusicBean" class="ru.kondratev.stud.RapMusic"/>
 
-    <bean id="musicPlayer" class="ru.kondratev.stud.MusicPlayer">
+    <bean id="musicPlayer" class="ru.kondratev.stud.MusicPlayer" scope="prototype">
         <constructor-arg ref="musicBean"/>
+
     </bean>
 
 </beans>

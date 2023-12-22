@@ -11,6 +11,11 @@ public class TestSpring {
                 "applicationContext.xml"
         );
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println(musicPlayer == musicPlayer2);
+        musicPlayer.setValue(236);
+        System.out.println(musicPlayer.getValue());
+        System.out.println(musicPlayer2.getValue());
         List<Music> playListMus = List.of(
                 context.getBean("classicMusicBean", ClassicalMusic.class),
                 context.getBean("rapMusicBean", RapMusic.class),
@@ -21,6 +26,7 @@ public class TestSpring {
         System.out.println("Playing songs list: ");
         musicPlayer.playMusicList(playListMus);
         System.out.println();
+
         context.close();
     }
 }
