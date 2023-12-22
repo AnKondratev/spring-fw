@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="Spring lesson 5: &quot;Dependency injection&quot; + list v2">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" afterDir="false" />
-    </list>
+    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="Spring lesson 7: &quot;Bean scopes&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,7 @@
       <updated>1703138927679</updated>
       <workItem from="1703138928722" duration="2474000" />
       <workItem from="1703141801040" duration="15623000" />
-      <workItem from="1703221290124" duration="5167000" />
+      <workItem from="1703221290124" duration="5493000" />
     </task>
     <task id="LOCAL-00001" summary="Spring lesson 4">
       <option name="closed" value="true" />
@@ -134,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703225540319</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spring lesson 7: &quot;Bean scopes&quot;">
+      <option name="closed" value="true" />
+      <created>1703226801590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703226801590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +151,7 @@
     <MESSAGE value="Spring lesson 5: &quot;Dependency injection&quot;" />
     <MESSAGE value="Spring lesson 5: &quot;Dependency injection&quot; + list" />
     <MESSAGE value="Spring lesson 5: &quot;Dependency injection&quot; + list v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring lesson 5: &quot;Dependency injection&quot; + list v2" />
+    <MESSAGE value="Spring lesson 7: &quot;Bean scopes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring lesson 7: &quot;Bean scopes&quot;" />
   </component>
 </project>
