@@ -4,21 +4,18 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
+    <bean id="musicBean" class="ru.kondratev.stud.ClassicalMusic"/>
     <bean id="classicMusicBean" class="ru.kondratev.stud.ClassicalMusic"/>
-    <bean id="rapMusicBean" class="ru.kondratev.stud.RockMusic"/>
     <bean id="rockMusicBean" class="ru.kondratev.stud.RockMusic"/>
+    <bean id="rapMusicBean" class="ru.kondratev.stud.RapMusic"/>
 
     <bean id="musicPlayer" class="ru.kondratev.stud.MusicPlayer">
-        <property name="playlist">
-            <list>
-                <ref bean="classicMusicBean"/>
-                <ref bean="rapMusicBean"/>
-                <ref bean="rockMusicBean"/>
-            </list>
-        </property>
+        <constructor-arg ref="musicBean"/>
     </bean>
+
 </beans>

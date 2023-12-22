@@ -52,7 +52,8 @@ public class MusicPlayer {
         System.out.printf("Playing: %s%n", song.getSong());
     }
 
-    public void playMusicList() {
-        getPlaylist().forEach(e -> System.out.println(e.getSong()));
+    public void playMusicList(List<Music> list) {
+        list.forEach(e -> System.out.println(e.getSong()));
     }
+
 }
