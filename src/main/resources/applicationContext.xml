@@ -9,14 +9,17 @@
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
-    <bean id="musicBean" class="ru.kondratev.stud.ClassicalMusic"/>
-    <bean id="classicMusicBean" class="ru.kondratev.stud.ClassicalMusic"/>
+    <bean id="classicMusicBean"
+          class="ru.kondratev.stud.ClassicalMusic"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          factory-method="getClassicalMusic"/>
+
     <bean id="rockMusicBean" class="ru.kondratev.stud.RockMusic"/>
     <bean id="rapMusicBean" class="ru.kondratev.stud.RapMusic"/>
 
-    <bean id="musicPlayer" class="ru.kondratev.stud.MusicPlayer" scope="prototype">
-        <constructor-arg ref="musicBean"/>
-
+    <bean id="musicPlayer"
+          class="ru.kondratev.stud.MusicPlayer">
+        <constructor-arg ref="classicMusicBean"/>
     </bean>
-
 </beans>
