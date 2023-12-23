@@ -1,23 +1,26 @@
 package ru.kondratev.stud;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MusicPlayer {
-
-    private ClassicalMusic classicalMusic;
-    private RockMusic rockMusic;
+    private Music rock;
+    private Music classic;
 
     @Autowired
-    public MusicPlayer(ClassicalMusic classicalMusic, RockMusic rockMusic) {
-        this.classicalMusic = classicalMusic;
-        this.rockMusic = rockMusic;
+    public MusicPlayer(@Qualifier("rockMusic") Music rock,
+                       @Qualifier("classicalMusic") Music classic) {
+        this.rock = rock;
+        this.classic = classic;
     }
 
-    public String playMusic() {
-        return "Playing: " + classicalMusic.getSong() + ", " +
-                "Playing: " + rockMusic.getSong();
+    public String playMusic(MusicalTypes type) {
+        String res = switch (type) {
+            case ROCK -> rock.getSong();
+            case CLASSICAL -> classic.getSong();
+        };
+        return "Playing: " + res;
     }
-
 }
