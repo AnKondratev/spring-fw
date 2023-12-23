@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="Spring lesson 8: &quot;Bean Lifecycle&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/ClassicalMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RapMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RapMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RockMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-    </list>
+    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="Spring lesson 9: &quot;Annotations. Introduction&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +90,7 @@
       <updated>1703138927679</updated>
       <workItem from="1703138928722" duration="2474000" />
       <workItem from="1703141801040" duration="15623000" />
-      <workItem from="1703221290124" duration="10248000" />
+      <workItem from="1703221290124" duration="10400000" />
     </task>
     <task id="LOCAL-00001" summary="Spring lesson 4">
       <option name="closed" value="true" />
@@ -163,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703231983416</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Spring lesson 9: &quot;Annotations. Introduction&quot;">
+      <option name="closed" value="true" />
+      <created>1703234294760</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703234294760</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +177,7 @@
     <MESSAGE value="Spring lesson 5: &quot;Dependency injection&quot; + list v2" />
     <MESSAGE value="Spring lesson 7: &quot;Bean scopes&quot;" />
     <MESSAGE value="Spring lesson 8: &quot;Bean Lifecycle&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring lesson 8: &quot;Bean Lifecycle&quot;" />
+    <MESSAGE value="Spring lesson 9: &quot;Annotations. Introduction&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring lesson 9: &quot;Annotations. Introduction&quot;" />
   </component>
 </project>
