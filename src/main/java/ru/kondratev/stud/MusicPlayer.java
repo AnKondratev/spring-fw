@@ -1,59 +1,23 @@
 package ru.kondratev.stud;
 
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MusicPlayer {
-    private Music song;
-    private List<Music> playlist;
-    private String name;
-    private int value;
 
-    public MusicPlayer(Music song) {
-        this.song = song;
+    private ClassicalMusic classicalMusic;
+    private RockMusic rockMusic;
+
+    @Autowired
+    public MusicPlayer(ClassicalMusic classicalMusic, RockMusic rockMusic) {
+        this.classicalMusic = classicalMusic;
+        this.rockMusic = rockMusic;
     }
 
-    public MusicPlayer() {
-
-    }
-
-    public Music getSong() {
-        return song;
-    }
-
-    public void setSong(Music song) {
-        this.song = song;
-    }
-
-    public List<Music> getPlaylist() {
-        return playlist;
-    }
-
-    public void setPlaylist(List<Music> playlist) {
-        this.playlist = playlist;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    public void playMusic() {
-        System.out.printf("Playing: %s%n", song.getSong());
-    }
-
-    public void playMusicList(List<Music> list) {
-        list.forEach(e -> System.out.println(e.getSong()));
+    public String playMusic() {
+        return "Playing: " + classicalMusic.getSong() + ", " +
+                "Playing: " + rockMusic.getSong();
     }
 
 }

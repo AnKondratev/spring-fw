@@ -7,17 +7,6 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
     <context:component-scan base-package="ru.kondratev.stud"/>
 
-    <bean id="classicMusic"
-          class="ru.kondratev.stud.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic"/>
-
-    <bean id="musicPlayer"
-          class="ru.kondratev.stud.MusicPlayer">
-        <constructor-arg ref="classicMusic"/>
-    </bean>
 </beans>
