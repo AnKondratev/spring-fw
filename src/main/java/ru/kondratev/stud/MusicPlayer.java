@@ -1,40 +1,18 @@
 package ru.kondratev.stud;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import java.util.List;
+import java.util.Random;
 
-@Component
+
 public class MusicPlayer {
+    private final List<Music> list;
 
-    @Value("${musicPlayer.name}")
-    private String name;
-    @Value("${musicPlayer.value}")
-    private int value;
-    private Music rock;
-    private Music classic;
-
-    @Autowired
-    public MusicPlayer(@Qualifier("rockMusic") Music rock,
-                       @Qualifier("classicalMusic") Music classic) {
-        this.rock = rock;
-        this.classic = classic;
+    public MusicPlayer(List<Music> list) {
+        this.list = list;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public String playMusic(MusicalTypes type) {
-        String res = switch (type) {
-            case ROCK -> rock.getSong();
-            case CLASSICAL -> classic.getSong();
-        };
-        return "Playing: " + res;
+    public String playMusic() {
+        Random random = new Random();
+        return "Playing: " + list.get(random.nextInt(list.size())).getSong();
     }
 }

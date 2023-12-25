@@ -9,9 +9,6 @@ public class TestSpring {
                 new AnnotationConfigApplicationContext(SpringConfig.class);
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        System.out.println(musicPlayer.getName());
-        System.out.println(musicPlayer.getValue());
-        ClassicalMusic classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
-        System.out.println(classicalMusic.getSong());
+        System.out.println(musicPlayer.playMusic());
     }
 }

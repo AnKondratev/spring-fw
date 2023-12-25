@@ -1,12 +1,12 @@
-package ru.kondratev.stud;
+package ru.kondratev.stud.genres;
 
 import org.springframework.stereotype.Component;
+import ru.kondratev.stud.Music;
 
 import java.util.List;
 import java.util.Random;
 
-@Component
-public class RockMusic implements Music{
+public class RockMusic implements Music {
 
     @Override
     public String getSong() {

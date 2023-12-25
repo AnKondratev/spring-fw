@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="\Spring lesson 12: &quot;Annotations. @Scope, @Value, PostConstruct, @PreDestroy (Dependency injection)&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/SpringConfig.java" afterDir="false" />
+    <list default="true" id="247d0328-ec37-44d4-8660-1adf1cae19eb" name="Changes" comment="\Spring lesson 13: &quot;Configuration with java code&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/genres/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/MusicalTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RapMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/genres/RapMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/genres/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kondratev/stud/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +78,7 @@
       <module name="spring-fw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.kondratev.stud.*" />
+          <option name="PATTERN" value="ru.kondratev.stud.genres.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,7 +104,7 @@
       <workItem from="1703141801040" duration="15623000" />
       <workItem from="1703221290124" duration="10400000" />
       <workItem from="1703310483565" duration="9082000" />
-      <workItem from="1703490667120" duration="3923000" />
+      <workItem from="1703490667120" duration="7832000" />
     </task>
     <task id="LOCAL-00001" summary="Spring lesson 4">
       <option name="closed" value="true" />
@@ -205,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703496688082</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="\Spring lesson 13: &quot;Configuration with java code&quot;">
+      <option name="closed" value="true" />
+      <created>1703497980543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703497980543</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +236,7 @@
     <MESSAGE value="\Spring lesson 10: &quot;Annotations. Dependency injection&quot;" />
     <MESSAGE value="\Spring lesson 11: &quot;Annotations. @Qualifier Dependency injection&quot;" />
     <MESSAGE value="\Spring lesson 12: &quot;Annotations. @Scope, @Value, PostConstruct, @PreDestroy (Dependency injection)&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="\Spring lesson 12: &quot;Annotations. @Scope, @Value, PostConstruct, @PreDestroy (Dependency injection)&quot;" />
+    <MESSAGE value="\Spring lesson 13: &quot;Configuration with java code&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="\Spring lesson 13: &quot;Configuration with java code&quot;" />
   </component>
 </project>
