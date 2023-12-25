@@ -8,5 +8,6 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="ru.kondratev.stud"/>
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
 </beans>
